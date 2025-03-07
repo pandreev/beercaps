@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Beer Caps Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-6xl mx-auto">
+        <h1 class="text-4xl font-bold text-center mb-8">Pesho's Beer Caps Collection</h1>
+        
+        <div class="flex mb-4">
+            <div id="continentTabs" class="flex space-x-2" style="flex-wrap: wrap;"></div>
+        </div>
+        <div class="flex mb-4">
+            <div id="countryTabs" class="flex space-x-2" style="flex-wrap: wrap;"></div>
+        </div>
+        <div class="flex mb-4">
+            <div id="breweryTabs" class="flex space-x-2" style="flex-wrap: wrap;"></div>
+        </div>
+        <div id="beerContent" class="bg-white rounded-lg shadow-md p-6"></div>
+    </div>
+
+    <script>
+        const countryFlags = {
+            'World': '🌍',
+            'Europe': '🇪🇺',
+            'Germany': '🇩🇪',
+            'Spain': '🇪🇸',
+            'Denmark': '🇩🇰',
+            'Poland': '🇵🇱',
+            'Bulgaria': '🇧🇬',
+            'Czechia': '🇨🇿',
+            'United States': '🇺🇸',
+            'Netherlands': '🇳🇱',
+            'Romania': '🇷🇴',
+            'Ukraine': '🇺🇦',
+            'Sweden': '🇸🇪',
+            'Finland': '🇫🇮',
+            'Croatia': '🇭🇷',
+            'Ireland': '🇮🇪',
+            'United Kingdom': '🇬🇧',
+            'Thailand': '🇹🇭',
+            'Japan': '🇯🇵',
+            'Mexico': '🇲🇽'
+        };
+
+        // region data
+        const beerCollection = [
+            // Europe
+            // region Spain
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/1.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/2.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/3.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/4.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/5.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/6.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/7.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/8.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/9.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/10.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/11.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/12.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/13.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/14.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/15.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/16.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/17.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/18.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/19.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/20.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/21.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/22.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/23.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/24.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/25.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/26.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/27.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/28.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/29.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/30.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/31.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/32.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/33.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/34.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/35.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/36.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/37.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/38.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/39.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/40.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/41.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/42.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/43.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/44.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/45.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/46.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/47.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/48.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/49.png' },
+            { name: '', brewery: 'Unknown', country: 'Spain', continent: 'Europe', image: 'img/Spain/50.png' },
+            // endregion
+
+        ];
+        // endregion
+
+        function renderContinentTabs() {
+            const tabContainer = document.getElementById('continentTabs');
+            tabContainer.innerHTML = '';
+
+            // intro
+            const tab = document.createElement('button');
+            tab.className = `px-4 py-2 rounded bg-blue-500 text-white`;
+            tab.innerHTML = 'Home';
+            tab.addEventListener('click', () => {
+                tabContainer.childNodes.forEach(t => {
+                    t.className = 'px-4 py-2 rounded bg-gray-200';
+                });
+                tab.className = 'px-4 py-2 rounded bg-blue-500 text-white';
+
+                renderIntro();
+            });
+            tabContainer.appendChild(tab);
+
+            // continents
+            const continents = [...new Set(beerCollection.map(beer => beer.continent))];
+
+            continents.forEach((continent, index) => {
+                const tab = document.createElement('button');
+                const beers = beerCollection.filter(beer =>
+                    beer.continent === continent
+                );
+                tab.className = `px-4 py-2 rounded bg-gray-200}`;
+                tab.innerHTML = continent + ' (' + beers.length + ')';
+                tab.addEventListener('click', () => {
+                    tabContainer.childNodes.forEach(t => {
+                        t.className = 'px-4 py-2 rounded bg-gray-200';
+                    });
+                    tab.className = 'px-4 py-2 rounded bg-blue-500 text-white';
+
+                    renderCountryTabs(continent);
+                });
+                tabContainer.appendChild(tab);
+            });
+
+            renderIntro();
+        }
+
+        function renderIntro() {
+            const introSection = document.getElementById('beerContent');
+            introSection.innerHTML = `
+                    <img rel="preload" src="img/Main/collection.png" class="mx-auto mb-2 h-48 object-contain">
+                    <p class="text-gray-600">Welcome to my beer cans collection page. My name is Petar and I currently live in Malaga, Spain.
+                <br>I really love drinking beer so I started collecting the cans from the beers I have drunk since September 2024.
+                This allows me to keep memories from all the different types of beer I have drunk in my life.
+                <br>I hope you enjoy my collection.</p>
+                <p class="text-gray-600"><br><br>Bienvenidos a mi página de colección de latas de cerveza. Mi nombre es Petar y vivo en Málaga, España.
+                <br>Me encanta cerveza, así que comencé a coleccionar las latas de las cervezas que he tomado desde septiembre de 2024.
+                Esto me permite guardar recuerdos de todos los diferentes tipos de cerveza que he tomado en mi vida.
+                <br>Espero que disfrutes de mi colección.</p>
+            <p class="text-gray-600"><br><br>Добре дошли в моята страница за колекцията ми от бирени кутии. Казвам се Петър и в момента живея в Малага, Испания.
+                <br>Обичам бирата, затова започнах да събирам кутиите от бира, които съм изпил от септември 2024 досега.
+                Това ми позволява да запазя спомени за всички различни видове бира, които съм опитал през живота си.
+                <br>Надявам се да се насладите на колекцията ми.</p>
+                `;
+            document.getElementById("countryTabs").style.display="none";
+            document.getElementById("breweryTabs").style.display="none";
+        }
+
+        function renderCountryTabs(continent) {
+            document.getElementById("countryTabs").style.display="block";
+            document.getElementById("breweryTabs").style.display="block";
+            const tabContainer = document.getElementById('countryTabs');
+            tabContainer.innerHTML = '';
+
+            const countries = [...new Set(beerCollection
+                .filter(beer => beer.continent === continent)
+                .map(beer => beer.country))];
+            countries.sort();
+
+            countries.forEach((country, index) => {
+                const tab = document.createElement('button');
+                const beers = beerCollection.filter(beer =>
+                    beer.country === country
+                );
+                tab.className = `px-4 py-2 rounded ${index === 0 ? 'bg-blue-400 text-white' : 'bg-gray-200'}`;
+                tab.innerHTML = `${countryFlags[country] || ''} ${country} (${beers.length})`;
+                tab.addEventListener('click', () => {
+                    tabContainer.childNodes.forEach(t => {
+                        t.className = 'px-4 py-2 rounded bg-gray-200';
+                    });
+                    tab.className = 'px-4 py-2 rounded bg-blue-400 text-white';
+
+                    renderBreweryTabs(country);
+                });
+                tabContainer.appendChild(tab);
+            });
+
+            renderBreweryTabs(countries[0]);
+        }
+
+        function renderBreweryTabs(country) {
+            const breweryContainer = document.getElementById('breweryTabs');
+            breweryContainer.innerHTML = '';
+
+            const breweries = [...new Set(beerCollection
+                .filter(beer => beer.country === country)
+                .map(beer => beer.brewery))];
+            breweries.sort();
+
+            breweries.forEach((brewery, index) => {
+                const tab = document.createElement('button');
+                const beers = beerCollection.filter(beer =>
+                    beer.country === country && beer.brewery === brewery
+                );
+                tab.className = `px-4 py-2 rounded ${index === 0 ? 'bg-blue-300 text-white' : 'bg-gray-200'}`;
+                tab.textContent = brewery + ' (' + beers.length + ')';
+                tab.addEventListener('click', () => {
+                    breweryContainer.childNodes.forEach(t => {
+                        t.className = 'px-4 py-2 rounded bg-gray-200';
+                    });
+                    tab.className = 'px-4 py-2 rounded bg-blue-300 text-white';
+                    
+                    renderBeerContent(country, brewery);
+                });
+                breweryContainer.appendChild(tab);
+            });
+
+            renderBeerContent(country, breweries[0]);
+        }
+
+        function renderBeerContent(country, brewery) {
+            const contentContainer = document.getElementById('beerContent');
+            const beers = beerCollection.filter(beer => 
+                beer.country === country && beer.brewery === brewery
+            );
+
+            const beerGrid = document.createElement('div');
+            beerGrid.className = 'grid grid-cols-6 gap-4';
+
+            beers.forEach(beer => {
+                const beerElement = document.createElement('div');
+                beerElement.className = 'bg-gray-100 rounded-lg p-3 text-center';
+                beerElement.innerHTML = `
+                    <img rel="preload" src="${beer.image}" alt="${beer.name}" class="mx-auto mb-2 h-24 object-contain">
+                    <h4 class="font-semibold">${beer.name}</h4>
+                `;
+                beerGrid.appendChild(beerElement);
+            });
+
+            contentContainer.innerHTML = '';
+            contentContainer.appendChild(beerGrid);
+        }
+
+        renderContinentTabs();
+    </script>
+</body>
+</html>
