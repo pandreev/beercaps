@@ -16,7 +16,10 @@
         <div id="countryTabs" class="flex space-x-2" style="flex-wrap: wrap;"></div>
     </div>
     <div id="beerSection" class="flex mb-4">
-        <div id="breweryTabs" class="flex flex-col space-y-2 mr-6" style="width: 220px;"></div>
+        <div id="breweryContainer" class="mb-2">
+            <input id="brewerySearch" type="text" placeholder="Search beer name..." class="w-full px-3 py-2 rounded border border-gray-300" />
+            <div id="breweryTabs" class="flex flex-col space-y-2 mr-6" style="width: 220px;"></div>
+            </div>
         <div id="beerContent" class="bg-white rounded-lg shadow-md p-6 flex-1"></div>
     </div>
 </div>
@@ -913,12 +916,12 @@
                 <br>Надявам се да се насладите на колекцията ми.</p>
                 `;
         document.getElementById("countryTabs").style.display = "none";
-        document.getElementById("breweryTabs").style.display = "none";
+        document.getElementById("breweryContainer").style.display = "none";
     }
 
     function renderCountryTabs(continent) {
         document.getElementById("countryTabs").style.display = "block";
-        document.getElementById("breweryTabs").style.display = "flex";
+        document.getElementById("breweryContainer").style.display = "block";
         const tabContainer = document.getElementById('countryTabs');
         tabContainer.innerHTML = '';
 
@@ -981,15 +984,22 @@
             });
             breweryContainer.appendChild(tab);
         });
-
+        document.getElementById('brewerySearch').addEventListener('input', function() {
+            renderBeerContent(country, breweries[0], this.value);
+        });
         renderBeerContent(country, breweries[0]);
     }
 
-    function renderBeerContent(country, brewery) {
+    function renderBeerContent(country, brewery, search = '') {
         const contentContainer = document.getElementById('beerContent');
-        const beers = brewery === 'All'
+        let beers = brewery === 'All'
             ? beerCollection.filter(beer => beer.country === country)
             : beerCollection.filter(beer => beer.country === country && beer.brewery === brewery);
+
+        if (search) {
+            beers = beers.filter(beer => beer.name.toLowerCase().includes(search.toLowerCase()));
+        }
+
         beers.sort((a, b) => a.name.localeCompare(b.name))
         // Create header
         const header = document.createElement('h2');
