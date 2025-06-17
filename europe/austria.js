@@ -1,0 +1,17 @@
+const beerAustria = [
+    {name: 'Gösser', brewery: 'Gösser Brauerei', country: 'Austria', continent: 'Europe', image: 'img/Austria/1.png'},
+    {name: 'Gösser', brewery: 'Gösser Brauerei', country: 'Austria', continent: 'Europe', image: 'img/Austria/2.png'},
+    {name: 'Gösser </br> Natur Radler', brewery: 'Gösser Brauerei', country: 'Austria', continent: 'Europe', image: 'img/Austria/3.png'},
+    {name: 'Stiegl', brewery: 'Stieglbrauerei zu Salzburg', country: 'Austria', continent: 'Europe', image: 'img/Austria/4.png'},
+    {name: 'Zipfer', brewery: 'Brauerei Zipf', country: 'Austria', continent: 'Europe', image: 'img/Austria/5.png'},
+    {name: 'Zipfer </br> Urtyp', brewery: 'Brauerei Zipf', country: 'Austria', continent: 'Europe', image: 'img/Austria/6.png'},
+    {name: 'Edelweiss </br> Hefetrub', brewery: 'Hofbräu Kaltenhausen', country: 'Austria', continent: 'Europe', image: 'img/Austria/7.png'},
+    {name: 'Edelweiss </br> Dunkel', brewery: 'Hofbräu Kaltenhausen', country: 'Austria', continent: 'Europe', image: 'img/Austria/8.png'},
+    {name: 'Kaiser </br> Fasstyp', brewery: 'Brau Union Österreich AG', country: 'Austria', continent: 'Europe', image: 'img/Austria/9.png'},
+    {name: 'Innviertler </br> Hell', brewery: 'Brauerei Raschhofer', country: 'Austria', continent: 'Europe', image: 'img/Austria/10.png'},
+    {name: 'Wurmhöringer', brewery: 'Wurmhöringer', country: 'Austria', continent: 'Europe', image: 'img/Austria/11.png'},
+    {name: 'Schutzen', brewery: 'Brauerei Wieselburg', country: 'Austria', continent: 'Europe', image: 'img/Austria/12.png'},
+    {name: 'Raschhofer', brewery: 'Brauerei Raschhofer', country: 'Austria', continent: 'Europe', image: 'img/Austria/13.png'},
+    {name: 'Puntigamer', brewery: 'Brauerei Puntigam', country: 'Austria', continent: 'Europe', image: 'img/Austria/14.png'},
+    {name: 'Rieder', brewery: 'Brauerei Ried', country: 'Austria', continent: 'Europe', image: 'img/Austria/15.png'},
+];
