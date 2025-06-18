@@ -88,4 +88,5 @@ const beerSpain = [
     {name: 'El Aguila', brewery: 'El Aguila', country: 'Spain', continent: 'Europe', image: 'img/Spain/60.png'},
     {name: 'Califa', brewery: 'Califa Cordoba', country: 'Spain', continent: 'Europe', image: 'img/Spain/61.png'},
     {name: 'Maternus </br> Pilsen', brewery: 'Cerveza Mica', country: 'Spain', continent: 'Europe', image: 'img/Spain/62.png'},
+    {name: 'Camaro Cerveza Extra', brewery: 'Camaro', country: 'Spain', continent: 'Europe', image: 'img/Spain/155.png'},
 ];
