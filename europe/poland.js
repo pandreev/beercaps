@@ -8,4 +8,5 @@ const beerPoland = [
     {name: 'Tatra </br> Jasne Pelne', brewery: 'Tatra', country: 'Poland', continent: 'Europe', image: 'img/Poland/7.png'},
     {name: 'Żywiec', brewery: 'Żywiec', country: 'Poland', continent: 'Europe', image: 'img/Poland/8.png'},
     {name: 'Tyskie Gronie', brewery: 'Tyskie', country: 'Poland', continent: 'Europe', image: 'img/Poland/9.png'},
+    {name: 'Perła Export', brewery: 'Perła', country: 'Poland', continent: 'Europe', image: 'img/Poland/Perla/Perla_Export.png'},
 ];

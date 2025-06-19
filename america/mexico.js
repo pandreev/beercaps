@@ -4,4 +4,5 @@ const beerMexico = [
     {name: 'Corona cero', brewery: 'Corona', country: 'Mexico', continent: 'America', image: 'img/Mexico/Corona/Corona_cero.png'},
     {name: 'Sol </br> cerveza rubia', brewery: 'Sol', country: 'Mexico', continent: 'America', image: 'img/Mexico/3.png'},
     {name: 'Pacifico', brewery: 'Pacifico', country: 'Mexico', continent: 'America', image: 'img/Mexico/10.png'},
+    {name: 'Dos Equis XX', brewery: 'Dos Equis', country: 'Mexico', continent: 'America', image: 'img/Mexico/DosEquis/Dos_Equis_XX.png'},
 ];
