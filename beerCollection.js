@@ -46,4 +46,7 @@ const beerCollection = [
     ...beerThailand,
     ...beerVietnam,
 
+    // Asia
+    ...beerMorocco,
+
 ];
