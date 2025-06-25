@@ -9,6 +9,7 @@ const beerSpain = [
     {name: 'Victoria </br> 10', brewery: 'Victoria', country: 'Spain', continent: 'Europe', image: 'img/Spain/Victoria/Victoria_10.png'},
     {name: 'San Miguel', brewery: 'San Miguel', country: 'Spain', continent: 'Europe', image: 'img/Spain/SanMiguel/San_Miguel_2.png'},
     {name: 'San Miguel', brewery: 'San Miguel', country: 'Spain', continent: 'Europe', image: 'img/Spain/SanMiguel/San_Miguel.png'},
+    {name: 'San Miguel 0.0', brewery: 'San Miguel', country: 'Spain', continent: 'Europe', image: 'img/Spain/1.png'},
     {
         name: 'San Miguel </br> Fresca',
         brewery: 'San Miguel',
@@ -55,8 +56,8 @@ const beerSpain = [
     {name: 'Ambar </br> Radler', brewery: 'Ambar', country: 'Spain', continent: 'Europe', image: 'img/Spain/Ambar/Ambar_Radler.png'},
     {name: 'Ambar </br> Morena', brewery: 'Ambar', country: 'Spain', continent: 'Europe', image: 'img/Spain/Ambar/Ambar_Morena.png'},
     {name: 'Ambar </br> IPA', brewery: 'Ambar', country: 'Spain', continent: 'Europe', image: 'img/Spain/Ambar/Ambar_IPA.png'},
-    {name: 'Ramblers </br> ???', brewery: 'Ramblers', country: 'Spain', continent: 'Europe', image: 'img/Spain/Ramblers/Ramblers_1.png'},
-    {name: 'Ramblers </br> ???', brewery: 'Ramblers', country: 'Spain', continent: 'Europe', image: 'img/Spain/Ramblers/Ramblers_2.png'},
+    {name: 'Ramblers </br> Reserva Artesana', brewery: 'Ramblers', country: 'Spain', continent: 'Europe', image: 'img/Spain/Ramblers/Ramblers_1.png'},
+    {name: 'Ramblers </br> Muy Suave', brewery: 'Ramblers', country: 'Spain', continent: 'Europe', image: 'img/Spain/Ramblers/Ramblers_2.png'},
     {name: 'Alhambra </br> Reserva 1925', brewery: 'Alhambra', country: 'Spain', continent: 'Europe', image: 'img/Spain/19.png'},
     {
         name: 'Alhambra </br> Reserva 1925',
@@ -148,12 +149,14 @@ const beerSpain = [
     {name: 'Dorada </br> Sin', brewery: 'Dorada', country: 'Spain', continent: 'Europe', image: 'img/Spain/Dorada/Dorada_Sin.png'},
     {name: 'Dorada </br> Sin Gluten', brewery: 'Dorada', country: 'Spain', continent: 'Europe', image: 'img/Spain/Dorada/Dorada_Sin_Gluten.png'},
     {name: 'Mahou </br> Cinco Estrellas', brewery: 'Mahou', country: 'Spain', continent: 'Europe', image: 'img/Spain/Mahou/Mahou_Cinco_Estrellas.png'},
+    {name: 'Mahou </br> Cinco Estrellas Sin Gluten', brewery: 'Mahou', country: 'Spain', continent: 'Europe', image: 'img/Spain/2.png'},
     {name: 'Mahou </br> Maestra Dunkel', brewery: 'Mahou', country: 'Spain', continent: 'Europe', image: 'img/Spain/Mahou/Mahou_Maestra_Dunkel.png'},
     {name: 'Mahou </br> Maestra Doble Lupulo', brewery: 'Mahou', country: 'Spain', continent: 'Europe', image: 'img/Spain/Mahou/Mahou_Maestra_Doble_Lupulo.png'},
     {name: 'Mahou </br> Barrica Original', brewery: 'Mahou', country: 'Spain', continent: 'Europe', image: 'img/Spain/Mahou/Mahou_Barrica_Original.png'},
     {name: 'Mahou </br> Bourbon', brewery: 'Mahou', country: 'Spain', continent: 'Europe', image: 'img/Spain/Mahou/Mahou_Bourbon.png'},
     {name: 'Mahou </br> Reserva', brewery: 'Mahou', country: 'Spain', continent: 'Europe', image: 'img/Spain/Mahou/Mahou_reserva.png'},
     {name: 'Mahou </br> 0,0 Tostada', brewery: 'Mahou', country: 'Spain', continent: 'Europe', image: 'img/Spain/Mahou/Mahou_0_Tostada.png'},
+    {name: 'Mahou </br> 0,0 Tostada', brewery: 'Mahou', country: 'Spain', continent: 'Europe', image: 'img/Spain//3.png'},
     {name: 'La Lager Brutus', brewery: 'Mahou', country: 'Spain', continent: 'Europe', image: 'img/Spain/205.png'},
     {name: '18/70', brewery: 'LaRubia', country: 'Spain', continent: 'Europe', image: 'img/Spain/LaRubia/1870.png'},
     {
