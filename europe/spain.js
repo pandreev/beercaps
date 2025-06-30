@@ -129,7 +129,7 @@ const beerSpain = [
         brewery: 'Dorada',
         country: 'Spain',
         continent: 'Europe',
-        image: 'img/Spain/Dorada/Dorada_Especial_Selecion_de_Trigo.png.png'
+        image: 'img/Spain/Dorada/Dorada_Especial_Selecion_de_Trigo.png'
     },
     {
         name: 'Dorada </br> Especial Extra Maduracion',
