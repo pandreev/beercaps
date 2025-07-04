@@ -398,7 +398,7 @@ const beerBayern = [
     {name: 'Himburgs Laguna IPA', brewery: 'Himburgs', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/139.png'},
     {name: 'Riegele', brewery: 'Riegele', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Others/Riegele_1.png'},
     {name: 'Riegele', brewery: 'Riegele', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Others/Riegele_2.png'},
-    {name: 'Riegele Engerl Hell Alkoholfrei', brewery: 'Riegele', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/OthersRiegele_Engerl_Hell_Alkoholfrei.png'},
+    {name: 'Riegele Engerl Hell Alkoholfrei', brewery: 'Riegele', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Others/Riegele_Engerl_Hell_Alkoholfrei.png'},
     {name: 'Hallbergmooser Handwerkshelle', brewery: 'Hallbergmooser', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Others/Hallbergmooser_Handwerkshelle.png'},
     {name: 'Hallbergmooser Moosweisse', brewery: 'Hallbergmooser', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Others/Hallbergmooser_Moosweisse.png'},
 ];
