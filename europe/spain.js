@@ -58,7 +58,7 @@ const beerSpain = [
     {name: 'Ambar </br> IPA', brewery: 'Ambar', country: 'Spain', continent: 'Europe', image: 'img/Spain/Ambar/Ambar_IPA.png'},
     {name: 'Ramblers </br> Reserva Artesana', brewery: 'Ramblers', country: 'Spain', continent: 'Europe', image: 'img/Spain/Ramblers/Ramblers_1.png'},
     {name: 'Ramblers </br> Muy Suave', brewery: 'Ramblers', country: 'Spain', continent: 'Europe', image: 'img/Spain/Ramblers/Ramblers_2.png'},
-    {name: 'Alhambra </br> Reserva 1925', brewery: 'Alhambra', country: 'Spain', continent: 'Europe', image: 'img/Spain/19.png'},
+    {name: 'Alhambra </br> Reserva 1925', brewery: 'Alhambra', country: 'Spain', continent: 'Europe', image: 'img/Spain/Alhambra/Alhambra_Reserva_1925.png'},
     {
         name: 'Alhambra </br> Reserva 1925',
         brewery: 'Alhambra',
@@ -172,6 +172,6 @@ const beerSpain = [
     {name: 'Califa', brewery: 'Califa Cordoba', country: 'Spain', continent: 'Europe', image: 'img/Spain/Califa/Califa.png'},
     {name: 'Maternus </br> Pilsen', brewery: 'Cerveza Mica', country: 'Spain', continent: 'Europe', image: 'img/Spain/Mica/Maternus_Pilsen.png'},
     {name: 'Maternus </br> Turbia', brewery: 'Cerveza Mica', country: 'Spain', continent: 'Europe', image: 'img/Spain/Mica/Maternus_Turbia.png'},
-    {name: 'Camaro Cerveza Extra', brewery: 'Camaro', country: 'Spain', continent: 'Europe', image: 'img/Spain/155.png'},
+    {name: 'Camaro Cerveza Extra', brewery: 'Camaro', country: 'Spain', continent: 'Europe', image: 'img/Spain/Camaro/Camaro.png'},
     {name: 'El Leon', brewery: 'El Leon', country: 'Spain', continent: 'Europe', image: 'img/Spain/ElLeon/El_Leon.png'},
 ];
