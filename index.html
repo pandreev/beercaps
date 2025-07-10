@@ -120,9 +120,20 @@
         'Vietnam': '🇻🇳'
     };
 
-    // region data
+    // Preload and cache images
+    const imageCache = {};
 
-    // endregion
+    function preloadImages(beerList) {
+        beerList.forEach(beer => {
+            const img = new Image();
+            img.src = beer.image;
+            imageCache[beer.image] = img;
+        });
+    }
+
+    function getCachedImageSrc(imagePath) {
+        return imageCache[imagePath]?.src || imagePath;
+    }
 
     function renderContinentTabs() {
         const tabContainer = document.getElementById('continentTabs');
@@ -163,6 +174,7 @@
             tabContainer.appendChild(tab);
         });
 
+        preloadImages(beerCollection);
         renderIntro();
     }
 
@@ -256,6 +268,7 @@
         document.getElementById('brewerySearch').addEventListener('input', function() {
             renderBeerContent(country, breweries[0], this.value);
         });
+
         renderBeerContent(country, breweries[0]);
     }
 
@@ -283,14 +296,14 @@
             const beerElement = document.createElement('div');
             beerElement.className = 'bg-gray-100 rounded-lg p-3 text-center';
             beerElement.innerHTML = `
-                    <img rel="preload" src="${beer.image}" alt="${beer.name}" class="mx-auto mb-2 h-24 object-contain">
+                    <img rel="preload" src="${getCachedImageSrc(beer.image)}" alt="${beer.name}" class="mx-auto mb-2 h-24 object-contain">
                     <p class="font-normal line-clamp-2">${beer.name}</p>
                 `;
             beerElement.addEventListener('click', () => {
                 const modal = document.getElementById('beerModal');
                 const content = document.getElementById('beerModalContent');
                 content.innerHTML = `
-                    <img src="${beer.image}" alt="${beer.name}" class="mx-auto mb-4 h-64 object-contain">
+                    <img src="${getCachedImageSrc(beer.image)}" alt="${beer.name}" class="mx-auto mb-4 h-64 object-contain">
                     <h3 class="text-xl font-bold mb-2">${beer.name.replaceAll('</br>', '')}</h3>
                     <p class="mb-1"><strong>Country:</strong> ${beer.country}</p>
                     <p class="mb-1"><strong>Continent:</strong> ${beer.continent}</p>
