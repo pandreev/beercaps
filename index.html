@@ -180,19 +180,27 @@
 
     function renderIntro() {
         const introSection = document.getElementById('beerContent');
+        const totalBeers = beerCollection.length;
+        const totalCountries = new Set(beerCollection.map(beer => beer.country)).size;
         introSection.innerHTML = `
-                    <img rel="preload" src="img/Main/collection.png" class="mx-auto mb-2 h-48 object-contain">
-                    <p class="text-gray-600">Welcome to my beer caps collection page. My name is Petar and I currently live in Malaga, Spain.
+<!--                    <img rel="preload" src="img/Main/collection.png" class="mx-auto mb-2 h-48 object-contain">-->
+                   <p class="text-gray-600 mb-2"></p>
+                <p class="text-gray-600">Welcome to my beer caps collection page. My name is Petar and I currently live in Malaga, Spain.
                 <br>I really love drinking beer, so I started collecting the caps from the beers I have drunk in 2014.
                 This allows me to keep memories from all the different types of beer I have drunk in my life.
+                <br>At the moment my collection consists of <strong>${totalBeers}</strong> caps from <strong>${totalCountries}</strong> countries.
                 <br>I hope you enjoy my collection.</p>
-                <p class="text-gray-600"><br><br>Bienvenidos a mi página de colección de chapas de cerveza. Mi nombre es Petar y vivo en Málaga, España.
+
+                <p class="text-gray-600"><br><br>Bienvenidos a mi página de colección de chapas de cerveza. Soy Petar y vivo en Málaga, España.
                 <br>Me encanta cerveza, así que comencé a coleccionar las chapas de las cervezas que he tomado desde 2024.
                 Esto me permite guardar recuerdos de todos los diferentes tipos de cerveza que he tomado en mi vida.
+                <br>Actualmente mi colección consta de <strong>${totalBeers}</strong> chapas de <strong>${totalCountries}</strong> países.
                 <br>Espero que disfrutes de mi colección.</p>
-            <p class="text-gray-600"><br><br>Добре дошли в моята страница за колекцията ми от бирени капачки. Казвам се Петър и в момента живея в Малага, Испания.
+
+                <p class="text-gray-600"><br><br>Добре дошли в моята страница за колекцията ми от бирени капачки. Казвам се Петър и в момента живея в Малага, Испания.
                 <br>Обичам бирата, затова започнах да събирам капачките от бира, които съм изпил от 2014 досега.
                 Това ми позволява да запазя спомени за всички различни видове бира, които съм опитал през живота си.
+                <br>В момента колекцията ми се състои от <strong>${totalBeers}</strong> капачки от <strong>${totalCountries}</strong> страни.
                 <br>Надявам се да се насладите на колекцията ми.</p>
                 `;
         document.getElementById("countryTabs").style.display = "none";
