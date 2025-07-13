@@ -94,7 +94,7 @@ const beerSpain = [
         brewery: 'Estrella Galicia',
         country: 'Spain',
         continent: 'Europe',
-        image: 'img/Spain/201.png'
+        image: 'img/Spain/EstrellaGalicia/Estrella_Galicia_Primera.png'
     },
     {name: '1906 </br> La Milnueve', brewery: 'Estrella Galicia', country: 'Spain', continent: 'Europe', image: 'img/Spain/EstrellaGalicia/1906_La_Milnueve.png'},
     {name: '1906 </br> Red Vintage', brewery: 'Estrella Galicia', country: 'Spain', continent: 'Europe', image: 'img/Spain/EstrellaGalicia/1906_Red_Vintage.png'},
@@ -156,7 +156,7 @@ const beerSpain = [
     {name: 'Mahou </br> Bourbon', brewery: 'Mahou', country: 'Spain', continent: 'Europe', image: 'img/Spain/Mahou/Mahou_Bourbon.png'},
     {name: 'Mahou </br> Reserva', brewery: 'Mahou', country: 'Spain', continent: 'Europe', image: 'img/Spain/Mahou/Mahou_reserva.png'},
     {name: 'Mahou </br> 0,0 Tostada', brewery: 'Mahou', country: 'Spain', continent: 'Europe', image: 'img/Spain/Mahou/Mahou_0_Tostada.png'},
-    {name: 'Mahou </br> 0,0 Tostada', brewery: 'Mahou', country: 'Spain', continent: 'Europe', image: 'img/Spain//3.png'},
+    {name: 'Mahou </br> 0,0 Tostada', brewery: 'Mahou', country: 'Spain', continent: 'Europe', image: 'img/Spain/Mahou/Mahou_0_Tostada_2.png'},
     {name: 'La Lager Brutus', brewery: 'Mahou', country: 'Spain', continent: 'Europe', image: 'img/Spain/205.png'},
     {name: '18/70', brewery: 'LaRubia', country: 'Spain', continent: 'Europe', image: 'img/Spain/LaRubia/1870.png'},
     {
