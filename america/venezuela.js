@@ -1,3 +1,8 @@
 const beerVenezuela = [
-    {name: 'Polar Pilzen', brewery: 'Polar', country: 'Venezuela', continent: 'America', image: 'img/Venezuela/Polar/Polar.png'},
+    {
+        name: 'Polar Pilsen',
+        brewery: 'Polar',
+        country: 'Venezuela', city: 'Caracas', abv: '4.5%', style: 'Pilsener',
+        continent: 'America', image: 'img/Venezuela/Polar/Polar.png'
+    },
 ];

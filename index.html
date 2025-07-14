@@ -313,8 +313,9 @@
                 content.innerHTML = `
                     <img src="${getCachedImageSrc(beer.image)}" alt="${beer.name}" class="mx-auto mb-4 h-64 sm:h-96 object-contain w-full">
                     <h3 class="text-xl font-bold mb-2">${beer.name.replaceAll('</br>', '')}</h3>
-                    <p class="mb-1"><strong>Country:</strong> ${beer.country}</p>
-                    <p class="mb-1"><strong>Continent:</strong> ${beer.continent}</p>
+                    <p class="mb-1">${beer.abv ? `<strong>${beer.abv}</strong>` : ''}</p>
+                    <p class="mb-1">${beer.style ? `<strong>${beer.style}</strong>` : ''}</p>
+                    <p class="mb-1">${beer.city ? `${beer.city}, ${beer.country}` : `${beer.country}`}</p>
     `;
                 modal.classList.remove('hidden');
             });
