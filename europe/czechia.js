@@ -37,4 +37,5 @@ const beerCzechia = [
     {name: 'Svijany Bez Pasterizace ??', brewery: 'Pivovar Svijany', country: 'Czechia', continent: 'Europe', image: 'img/Czechia/Svijany/Svijany_3.png'},
     {name: 'Primátor W', brewery: 'Pivovar Náchod', country: 'Czechia', continent: 'Europe', image: 'img/Czechia/Primator/Primator_W.png'},
     {name: 'Budweiser Budvar Tmavy Lezak', brewery: 'Budweiser Budvar', country: 'Czechia', continent: 'Europe', image: 'img/Czechia/BudweiserBudvar/Budweiser_Budvar.png'},
+    {name: 'Praga', brewery: 'Praga', country: 'Czechia', continent: 'Europe', image: 'img/Czechia/Praga/Praga.png'},
 ];

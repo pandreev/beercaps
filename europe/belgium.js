@@ -34,7 +34,7 @@ const beerBelgium = [
     {name: 'Grimbergen Blonde', brewery: 'Grimbergen', country: 'Belgium', continent: 'Europe', image: 'img/Belgium/Grimbergen/Grimbergen_Blonde.png'},
     {name: 'Grimbergen Rouge', brewery: 'Grimbergen', country: 'Belgium', continent: 'Europe', image: 'img/Belgium/Grimbergen/Grimbergen_Rouge.png'},
     {name: 'Grimbergen Blanche', brewery: 'Grimbergen', country: 'Belgium', continent: 'Europe', image: 'img/Belgium/Grimbergen/Grimbergen_Blanche.png'},
-    {name: 'Grimbergen Double', brewery: 'Grimbergen', country: 'Belgium', continent: 'Europe', image: 'img/Belgium/Grimbergen_Double.png'},
+    {name: 'Grimbergen Double', brewery: 'Grimbergen', country: 'Belgium', continent: 'Europe', image: 'img/Belgium/Grimbergen/Grimbergen_Double.png'},
     {name: 'Grimbergen Triple D\'Abbaye', brewery: 'Grimbergen', country: 'Belgium', continent: 'Europe', image: 'img/Belgium/Grimbergen/Grimbergen_Triple.png'},
     {name: 'Hoegaarden', brewery: 'Brouwerij Van Hoegaarden', country: 'Belgium', continent: 'Europe', image: 'img/Belgium/Hoegaarden/Hoegaarden.png'},
     {name: 'Hoegaarden Blanche Wit', brewery: 'Brouwerij Van Hoegaarden', country: 'Belgium', continent: 'Europe', image: 'img/Belgium/Hoegaarden/Hoegaarden_Blanche_Wit.png'},
