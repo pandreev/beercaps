@@ -28,5 +28,7 @@ const beerUnitedKingdom = [
         country: 'United Kingdom',
         continent: 'Europe',
         image: 'img/UnitedKingdom/Harpers/Harpers.png'
-    }
+    },
+    {name: 'Cobra Premium', brewery: 'Cobra', country: 'United Kingdom', continent: 'Europe', image: 'img/UnitedKingdom/Cobra/Cobra_Premium.png'}
+
 ];
