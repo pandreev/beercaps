@@ -24,6 +24,12 @@ const beerMexico = [
         continent: 'America', image: 'img/Mexico/Sol/Sol.png'
     },
     {
+        name: 'Sol </br> cerveza rubia',
+        brewery: 'Sol',
+        country: 'Mexico', city: 'Ciudad de México', abv: '4.5%', style: 'American Adjunct Lager',
+        continent: 'America', image: 'img/Mexico/Sol/Sol_2.png'
+    },
+    {
         name: 'Pacifico Clara',
         brewery: 'Pacifico',
         country: 'Mexico', city: 'Mazatlán', abv: '4.5%', style: 'American Adjunct Lager',

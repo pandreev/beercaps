@@ -4,6 +4,7 @@ const beerBayern = [
     {name: 'Paulaner', brewery: 'Paulaner', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Paulaner/Paulaner_2.png'},
     {name: 'Paulaner', brewery: 'Paulaner', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Paulaner/Paulaner_3.png'},
     {name: 'Paulaner', brewery: 'Paulaner', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Paulaner/Paulaner_4.png'},
+    {name: 'Paulaner', brewery: 'Paulaner', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Paulaner/Paulaner_5.png'},
     {
         name: 'Paulaner </br> Original Münchner Hell',
         brewery: 'Paulaner',
@@ -230,6 +231,13 @@ const beerBayern = [
         continent: 'Europe',
         image: 'img/Bayern/Giesinger/Giesinger_Radler.png'
     },
+    {
+        name: 'Giesinger </br> Schankbier',
+        brewery: 'Giesinger',
+        country: 'Bayern',
+        continent: 'Europe',
+        image: 'img/Bayern/Giesinger/Giesinger_Schankbier.png'
+    },
     // Schneider Weisse
     {
         name: 'Schneider Weisse </br> Meine Blonde Weisse',
@@ -307,6 +315,7 @@ const beerBayern = [
     {name: 'Steiner </br> Natur Radler', brewery: 'Steiner', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Steiner/Steiner_Natur_Radler.png'},
     {name: 'Flötzinger Bräu', brewery: 'Flötzinger', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Floetzinger/Floetzinger.png'},
     {name: 'Flötzinger Bräu 2015', brewery: 'Flötzinger', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Floetzinger/Floetzinger_2015.png'},
+    {name: 'Flötzinger Hell', brewery: 'Flötzinger', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Floetzinger/Floetzinger_2.png'},
     {name: 'Unertl </br> Weißbier', brewery: 'Weißbräu Unertl Mühldorf', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Others/Unertl_Weissbier.png'},
     {name: 'Störchle', brewery: 'Störchle', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Stoerchle/Stoerchle.png'},
     {name: 'Schwarz Störchle', brewery: 'Störchle', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Stoerchle/Schwarz_Stoerchle.png'},
@@ -401,4 +410,8 @@ const beerBayern = [
     {name: 'Riegele Engerl Hell Alkoholfrei', brewery: 'Riegele', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Others/Riegele_Engerl_Hell_Alkoholfrei.png'},
     {name: 'Hallbergmooser Handwerkshelle', brewery: 'Hallbergmooser', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Others/Hallbergmooser_Handwerkshelle.png'},
     {name: 'Hallbergmooser Moosweisse', brewery: 'Hallbergmooser', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Others/Hallbergmooser_Moosweisse.png'},
+    {name: 'Benediktiner Hell', brewery: 'Klosterbrauerei Ettal', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Others/Benediktiner_Hell.png'},
+    {name: 'Eichhofener Premium Pils', brewery: 'Eichhofener', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Others/Eichhofener_Premium_Pils.png'},
+    {name: 'Wunderbraeu Helles', brewery: 'Wunderbraeu', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Others/Wunderbraeu.png'},
+    {name: 'Kuchlbauer Helles Bier', brewery: 'Kuchlbauer', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Others/Kuchlbauer_Helles_Bier.png'},
 ];
