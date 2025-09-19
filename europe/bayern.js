@@ -414,4 +414,7 @@ const beerBayern = [
     {name: 'Eichhofener Premium Pils', brewery: 'Eichhofener', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Others/Eichhofener_Premium_Pils.png'},
     {name: 'Wunderbraeu Helles', brewery: 'Wunderbraeu', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Others/Wunderbraeu.png'},
     {name: 'Kuchlbauer Helles Bier', brewery: 'Kuchlbauer', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Others/Kuchlbauer_Helles_Bier.png'},
+    {name: 'Spital', brewery: 'Spital', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Others/Spital.png'},
+    {name: 'Kneitinger', brewery: 'Kneitinger', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Others/Kneitinger.png'},
+    {name: 'Sandersdorf Bio Hell', brewery: 'Sandersdorf', country: 'Bayern', continent: 'Europe', image: 'img/Bayern/Others/Sandersdorf_Bio_Hell.png'},
 ];

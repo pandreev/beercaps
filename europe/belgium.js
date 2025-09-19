@@ -19,6 +19,7 @@ const beerBelgium = [
         image: 'img/Belgium/GuldenDraak/Gulden_Draak_9000.png'
     },
     {name: 'Heineken', brewery: 'Heineken', country: 'Belgium', continent: 'Europe', image: 'img/Belgium/Heineken/Heineken.png'},
+    {name: 'Heineken Original', brewery: 'Heineken', country: 'Belgium', continent: 'Europe', image: 'img/Belgium/Heineken/Heineken_Original.png'},
     {name: 'Vedett Extra Ordinary IPA', brewery: 'Vedett', country: 'Belgium', continent: 'Europe', image: 'img/Belgium/Vedett/Vedett_IPA.png'},
     {name: 'Piraat', brewery: 'Piraat', country: 'Belgium', continent: 'Europe', image: 'img/Belgium/Piraat/Piraat.png'},
     {name: 'Piraat Triple Hop', brewery: 'Piraat', country: 'Belgium', continent: 'Europe', image: 'img/Belgium/Piraat/Piraat_Triple_Hop.png'},

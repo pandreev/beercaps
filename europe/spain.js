@@ -56,6 +56,8 @@ const beerSpain = [
     {name: 'Ambar </br> Radler', brewery: 'Ambar', country: 'Spain', continent: 'Europe', image: 'img/Spain/Ambar/Ambar_Radler.png'},
     {name: 'Ambar </br> Morena', brewery: 'Ambar', country: 'Spain', continent: 'Europe', image: 'img/Spain/Ambar/Ambar_Morena.png'},
     {name: 'Ambar </br> IPA', brewery: 'Ambar', country: 'Spain', continent: 'Europe', image: 'img/Spain/Ambar/Ambar_IPA.png'},
+    {name: 'Ambar </br> 000 Sin Gluten', brewery: 'Ambar', country: 'Spain', continent: 'Europe', image: 'img/Spain/Ambar/Ambar_000.png'},
+    {name: 'Ambar </br> 1900 Sin Filtrar', brewery: 'Ambar', country: 'Spain', continent: 'Europe', image: 'img/Spain/Ambar/Ambar_1900.png'},
     {name: 'Ramblers </br> Reserva Artesana', brewery: 'Ramblers', country: 'Spain', continent: 'Europe', image: 'img/Spain/Ramblers/Ramblers_1.png'},
     {name: 'Ramblers </br> Muy Suave', brewery: 'Ramblers', country: 'Spain', continent: 'Europe', image: 'img/Spain/Ramblers/Ramblers_2.png'},
     {name: 'Alhambra </br> Reserva 1925', brewery: 'Alhambra', country: 'Spain', continent: 'Europe', image: 'img/Spain/Alhambra/Alhambra_Reserva_1925.png'},
@@ -87,6 +89,13 @@ const beerSpain = [
         continent: 'Europe',
         image: 'img/Spain/Alhambra/Alhambra_Reserva_Roja.png'
     },
+    {
+        name: 'Alhambra </br> Especial Sin',
+        brewery: 'Alhambra',
+        country: 'Spain',
+        continent: 'Europe',
+        image: 'img/Spain/Alhambra/Alhambra_Especial_Sin.png'
+    },
     {name: 'Estrella Galicia', brewery: 'Estrella Galicia', country: 'Spain', continent: 'Europe', image: 'img/Spain/EstrellaGalicia/Estrella_Galicia.png'},
     {name: 'Estrella Galicia </br> 0,0', brewery: 'Estrella Galicia', country: 'Spain', continent: 'Europe', image: 'img/Spain/EstrellaGalicia/Estrella_Galicia_0.png'},
     {
@@ -101,6 +110,7 @@ const beerSpain = [
     {name: '1906 </br> La Pelirroja', brewery: 'Estrella Galicia', country: 'Spain', continent: 'Europe', image: 'img/Spain/EstrellaGalicia/1906_La_Pelirroja.png'},
     {name: 'El Alcazar', brewery: 'El Alcazar', country: 'Spain', continent: 'Europe', image: 'img/Spain/ElAlcazar/El_Alcazar.png'},
     {name: 'La Sagra', brewery: 'La Sagra', country: 'Spain', continent: 'Europe', image: 'img/Spain/LaSagra/La_Sagra.png'},
+    {name: 'La Sagra </br> estacionales', brewery: 'La Sagra', country: 'Spain', continent: 'Europe', image: 'img/Spain/LaSagra/La_Sagra_estacionales.png'},
     {name: 'IPA Artesana', brewery: 'La Sagra', country: 'Spain', continent: 'Europe', image: 'img/Spain/64.png'},
     {name: 'Moritz', brewery: 'Cervezas Moritz', country: 'Spain', continent: 'Europe', image: 'img/Spain/Moritz/Moritz.png'},
     {
@@ -157,6 +167,8 @@ const beerSpain = [
     {name: 'Mahou </br> Reserva', brewery: 'Mahou', country: 'Spain', continent: 'Europe', image: 'img/Spain/Mahou/Mahou_reserva.png'},
     {name: 'Mahou </br> 0,0 Tostada', brewery: 'Mahou', country: 'Spain', continent: 'Europe', image: 'img/Spain/Mahou/Mahou_0_Tostada.png'},
     {name: 'Mahou </br> 0,0 Tostada', brewery: 'Mahou', country: 'Spain', continent: 'Europe', image: 'img/Spain/Mahou/Mahou_0_Tostada_2.png'},
+    {name: 'Estrella del Sur', brewery: 'Estrella del Sur', country: 'Spain', continent: 'Europe', image: 'img/Spain/EstrellaDelSur/Estrella_Del_Sur.png'},
+    {name: 'Estrella del Sur </br> Sin Alcohol', brewery: 'Estrella del Sur', country: 'Spain', continent: 'Europe', image: 'img/Spain/EstrellaDelSur/Estrella_Del_Sur_0.png'},
     {name: 'La Lager Brutus', brewery: 'Mahou', country: 'Spain', continent: 'Europe', image: 'img/Spain/205.png'},
     {name: '18/70', brewery: 'LaRubia', country: 'Spain', continent: 'Europe', image: 'img/Spain/LaRubia/1870.png'},
     {
@@ -174,4 +186,15 @@ const beerSpain = [
     {name: 'Maternus </br> Turbia', brewery: 'Cerveza Mica', country: 'Spain', continent: 'Europe', image: 'img/Spain/Mica/Maternus_Turbia.png'},
     {name: 'Camaro Cerveza Extra', brewery: 'Camaro', country: 'Spain', continent: 'Europe', image: 'img/Spain/Camaro/Camaro.png'},
     {name: 'El Leon', brewery: 'El Leon', country: 'Spain', continent: 'Europe', image: 'img/Spain/ElLeon/El_Leon.png'},
+    {name: 'Nómada Naturepils',
+        brewery: 'Nómada',
+        country: 'Spain',
+        continent: 'Europe', city: 'Sabadell', abv: '4.6%', style: 'Pilsener',
+        image: 'img/Spain/Nomada/Nomada.png'},
+    {name: 'Del Rio </br> Cerveza Suave',
+        brewery: 'Arriaca',
+        country: 'Spain',
+        continent: 'Europe', city: 'Arriaca', abv: '4.5%', style: 'Mexican Lager',
+        image: 'img/Spain/Arriaca/Del_Rio.png'},
+    {name: 'Cerex 5', brewery: 'Cerex', country: 'Spain', continent: 'Europe', image: 'img/Spain/Cerex/Cerex_5.png'},
 ];

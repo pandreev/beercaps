@@ -1,5 +1,7 @@
 const beerPortugal = [
     {name: 'Sagres </br> Cerveja', brewery: 'Sagres', country: 'Portugal', continent: 'Europe', image: 'img/Portugal/Sagres/Sagres_Cerveja.png'},
+    {name: 'Sagres </br> Cerveja', brewery: 'Sagres', country: 'Portugal', continent: 'Europe', image: 'img/Portugal/Sagres/Sagres_Cerveja_2.png'},
     {name: 'Super Bock', brewery: 'Super Bock', country: 'Portugal', continent: 'Europe', image: 'img/Portugal/SuperBock/Super_Bock.png'},
+    {name: 'Super Bock Negra', brewery: 'Super Bock', country: 'Portugal', continent: 'Europe', image: 'img/Portugal/SuperBock/Super_Bock_Negra.png'},
     {name: 'Cristal', brewery: 'Cristal', country: 'Portugal', continent: 'Europe', image: 'img/Portugal/Cristal/Cristal.png'},
 ];

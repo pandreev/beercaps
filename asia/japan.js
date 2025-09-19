@@ -12,6 +12,12 @@ const beerJapan = [
         continent: 'Asia', image: 'img/Japan/Kirin_Ichiban/Kirin_Ichiban.png'
     },
     {
+        name: 'Kirin Ichiban 0.0%',
+        brewery: 'Kirin Ichiban',
+        country: 'Japan', city: 'Tokyo', abv: '0.0%', style: 'American Lager',
+        continent: 'Asia', image: 'img/Japan/Kirin_Ichiban/Kirin_Ichiban_0.png'
+    },
+    {
         name: 'Asahi </br> Super Dry',
         brewery: 'Asahi',
         country: 'Japan', city: 'Tokyo', abv: '5.0%', style: 'Japanese Rice Lager',
