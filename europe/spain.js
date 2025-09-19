@@ -110,7 +110,7 @@ const beerSpain = [
     {name: '1906 </br> La Pelirroja', brewery: 'Estrella Galicia', country: 'Spain', continent: 'Europe', image: 'img/Spain/EstrellaGalicia/1906_La_Pelirroja.png'},
     {name: 'El Alcazar', brewery: 'El Alcazar', country: 'Spain', continent: 'Europe', image: 'img/Spain/ElAlcazar/El_Alcazar.png'},
     {name: 'La Sagra', brewery: 'La Sagra', country: 'Spain', continent: 'Europe', image: 'img/Spain/LaSagra/La_Sagra.png'},
-    {name: 'La Sagra </br> estacionales', brewery: 'La Sagra', country: 'Spain', continent: 'Europe', image: 'img/Spain/LaSagra/La_Sagra_estacionales.png'},
+    {name: 'La Sagra </br> Session IPA', brewery: 'La Sagra', country: 'Spain', continent: 'Europe', image: 'img/Spain/LaSagra/La_Sagra_estacionales.png'},
     {name: 'IPA Artesana', brewery: 'La Sagra', country: 'Spain', continent: 'Europe', image: 'img/Spain/64.png'},
     {name: 'Moritz', brewery: 'Cervezas Moritz', country: 'Spain', continent: 'Europe', image: 'img/Spain/Moritz/Moritz.png'},
     {
