@@ -17,6 +17,6 @@ const beerPoland = [
     {name: 'Harnaś Jasne Pełne',
         brewery: 'Okocim',
         country: 'Poland',
-        continent: 'Europe',  city: 'Brzesko', abv: '6.0%', style: 'European Pale Lager',
+        continent: 'Europe',  city: 'Brzesko', abv: '5.0%', style: 'European Pale Lager',
         image: 'img/Poland/Okocim/Harnas.png'},
 ];
