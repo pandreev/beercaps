@@ -53,4 +53,5 @@ const beerGermany = [
     {name: 'Farny', brewery: 'Farny', country: 'Germany', continent: 'Europe', image: 'img/Germany/Others/Farny.png'},
     {name: 'Zoller Hof </br> Nein! Zu Fracking', brewery: 'Zoller Hof', country: 'Germany', continent: 'Europe', image: 'img/Germany/Others/Zoller_Hof.png'},
     {name: 'Patronus Weissbier', brewery: 'Patronus', country: 'Germany', continent: 'Europe', image: 'img/Germany/Others/Patronus.png'},
+    {name: 'Grevensteiner Original', brewery: 'Veltins', country: 'Germany', continent: 'Europe', image: 'img/Germany/Others/Grevensteiner_Original.png'},
 ];

@@ -6,4 +6,6 @@ const beerItaly = [
     {name: 'Birra Menabrea', brewery: 'Menabrea', country: 'Italy', continent: 'Europe', image: 'img/Italy/Menabrea/Menabrea.png'},
     {name: 'Birra Moretti', brewery: 'Moretti', country: 'Italy', continent: 'Europe', image: 'img/Italy/Moretti/Moretti_1.png'},
     {name: 'Birra Moretti', brewery: 'Moretti', country: 'Italy', continent: 'Europe', image: 'img/Italy/Moretti/Moretti_2.png'},
+    {name: 'Ichnusa', brewery: 'Birra Ichnusa', country: 'Italy', continent: 'Europe', image: 'img/Italy/Ichnusa/Ichnusa.png'},
+    {name: 'Birra Messina </br> Cristalli di Sale', brewery: 'Birra Messina', country: 'Italy', continent: 'Europe', image: 'img/Italy/Messina/Messina.png'},
 ];

@@ -23,4 +23,16 @@ const beerJapan = [
         country: 'Japan', city: 'Tokyo', abv: '5.0%', style: 'Japanese Rice Lager',
         continent: 'Asia', image: 'img/Japan/Asahi/Asahi_Super_Dry.png'
     },
+    {
+        name: 'Asahi </br> Super Dry',
+        brewery: 'Asahi',
+        country: 'Japan', city: 'Tokyo', abv: '5.0%', style: 'Japanese Rice Lager',
+        continent: 'Asia', image: 'img/Japan/Asahi/Asahi_Super_Dry_2.png'
+    },
+    {
+        name: 'Asahi </br> Super Dry',
+        brewery: 'Asahi',
+        country: 'Japan', city: 'Tokyo', abv: '5.0%', style: 'Japanese Rice Lager',
+        continent: 'Asia', image: 'img/Japan/Asahi/Asahi_Super_Dry_3.png'
+    },
 ];
