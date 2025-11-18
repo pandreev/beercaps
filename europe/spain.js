@@ -130,7 +130,7 @@ const beerSpain = [
         brewery: 'La Sagra',
         country: 'Spain',
         continent: 'Europe',   city: 'Numancia de la Sagra', abv: '7.2%', style: 'Double IPA',
-        image: 'img/Spain/64.png'},
+        image: 'img/Spain/LaSagra/IPA_Artesana.png'},
     {name: 'Moritz', brewery: 'Cervezas Moritz', country: 'Spain', continent: 'Europe', image: 'img/Spain/Moritz/Moritz.png'},
     {
         name: 'Espiga </br> Berliner Weisse',
@@ -207,6 +207,7 @@ const beerSpain = [
     {name: 'Maternus </br> Turbia', brewery: 'Cerveza Mica', country: 'Spain', continent: 'Europe', image: 'img/Spain/Mica/Maternus_Turbia.png'},
     {name: 'Camaro Cerveza Extra', brewery: 'Camaro', country: 'Spain', continent: 'Europe', image: 'img/Spain/Camaro/Camaro.png'},
     {name: 'El Leon', brewery: 'El Leon', country: 'Spain', continent: 'Europe', image: 'img/Spain/ElLeon/El_Leon.png'},
+    {name: 'Falke 0,0', brewery: 'Falke', country: 'Spain', continent: 'Europe', image: 'img/Spain/Falke/Falke_0.png'},
     {name: 'Nómada Naturepils',
         brewery: 'Nómada',
         country: 'Spain',

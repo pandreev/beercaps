@@ -29,7 +29,7 @@ const beerBelgium = [
     {name: 'Ciney Blonde', brewery: 'Ciney', country: 'Belgium', continent: 'Europe', image: 'img/Belgium/Ciney/Ciney_Blonde.png'},
     {name: 'Liefmans Master Blenders', brewery: 'Liefmans', country: 'Belgium', continent: 'Europe', image: 'img/Belgium/Liefmans/Liefmans.png'},
     {name: 'Judas', brewery: 'Judas', country: 'Belgium', continent: 'Europe', image: 'img/Belgium/Judas/Judas.png'},
-    {name: 'Affligem', brewery: 'Affligem Brouwerij', country: 'Belgium', continent: 'Europe', image: 'img/Belgium/Affligem.png'},
+    {name: 'Affligem', brewery: 'Affligem Brouwerij', country: 'Belgium', continent: 'Europe', image: 'img/Belgium/Affligem/Affligem.png'},
     {name: 'Abbaye d\'Aulne', brewery: 'Abbaye d\'Aulne', country: 'Belgium', continent: 'Europe', image: 'img/Belgium/AbbayedAulne/Abbaye_dAulne.png'},
     {name: 'Chimay', brewery: 'Chimay', country: 'Belgium', continent: 'Europe', image: 'img/Belgium/Chimay/Chimay.png'},
     {name: 'Grimbergen Blonde', brewery: 'Grimbergen', country: 'Belgium', continent: 'Europe', image: 'img/Belgium/Grimbergen/Grimbergen_Blonde.png'},
