@@ -164,7 +164,7 @@
             const beers = beerCollection.filter(beer =>
                 beer.continent === continent
             );
-            tab.className = `px-4 py-2 rounded bg-gray-200}`;
+            tab.className = `px-4 py-2 rounded bg-gray-200`;
             tab.innerHTML = continent + ' (' + beers.length + ')';
             tab.addEventListener('click', () => {
                 tabContainer.childNodes.forEach(t => {
