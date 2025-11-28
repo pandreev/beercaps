@@ -70,8 +70,11 @@
 <script src="asia/thailand.js"></script>
 <script src="asia/vietnam.js"></script>
 
-<!-- Asia-->
+<!-- Africa-->
 <script src="africa/morocco.js"></script>
+
+<!-- Glasses-->
+<script src="glasses/glasses.js"></script>
 
 <script src="beerCollection.js"></script>
 
@@ -141,13 +144,13 @@
 
         // intro
         const tab = document.createElement('button');
-        tab.className = `px-4 py-2 rounded bg-blue-500 text-white`;
+        tab.className = `px-4 py-2 rounded bg-blue-300 text-white`;
         tab.innerHTML = 'Home';
         tab.addEventListener('click', () => {
             tabContainer.childNodes.forEach(t => {
                 t.className = 'px-4 py-2 rounded bg-gray-200';
             });
-            tab.className = 'px-4 py-2 rounded bg-blue-500 text-white';
+            tab.className = 'px-4 py-2 rounded bg-blue-300 text-white';
 
             renderIntro();
         });
@@ -167,14 +170,29 @@
                 tabContainer.childNodes.forEach(t => {
                     t.className = 'px-4 py-2 rounded bg-gray-200';
                 });
-                tab.className = 'px-4 py-2 rounded bg-blue-500 text-white';
+                tab.className = 'px-4 py-2 rounded bg-blue-300 text-white';
 
                 renderCountryTabs(continent);
             });
             tabContainer.appendChild(tab);
         });
 
+        // glasses
+        const glassTab = document.createElement('button');
+        glassTab.className = `px-4 py-2 rounded bg-gray-200`;
+        glassTab.innerHTML = 'Glasses';
+        glassTab.addEventListener('click', () => {
+            tabContainer.childNodes.forEach(t => {
+                t.className = 'px-4 py-2 rounded bg-gray-200';
+            });
+            glassTab.className = 'px-4 py-2 rounded bg-blue-500 text-white';
+
+            renderGlasses();
+        });
+        tabContainer.appendChild(glassTab);
+
         preloadImages(beerCollection);
+        preloadImages(beerGlasses);
         renderIntro();
     }
 
@@ -223,13 +241,13 @@
             const beers = beerCollection.filter(beer =>
                 beer.country === country
             );
-            tab.className = `px-4 py-2 rounded ${index === 0 ? 'bg-blue-400 text-white' : 'bg-gray-200'}`;
+            tab.className = `px-4 py-2 rounded ${index === 0 ? 'bg-blue-300 text-white' : 'bg-gray-200'}`;
             tab.innerHTML = `${countryFlags[country] || ''} ${country} (${beers.length})`;
             tab.addEventListener('click', () => {
                 tabContainer.childNodes.forEach(t => {
                     t.className = 'px-4 py-2 rounded bg-gray-200';
                 });
-                tab.className = 'px-4 py-2 rounded bg-blue-400 text-white';
+                tab.className = 'px-4 py-2 rounded bg-blue-300 text-white';
 
                 renderBreweryTabs(country);
             });
@@ -302,7 +320,7 @@
 
         beers.forEach(beer => {
             const beerElement = document.createElement('div');
-            beerElement.className = 'bg-gray-100 rounded-lg p-3 text-center';
+            beerElement.className = 'bg-gray-200 rounded-lg p-3 text-center';
             beerElement.innerHTML = `
                     <img rel="preload" src="${getCachedImageSrc(beer.image)}" alt="${beer.name}" class="mx-auto mb-2 h-32 sm:h-48 object-contain w-full">
                     <p class="font-normal line-clamp-2">${beer.name}</p>
@@ -325,6 +343,99 @@
         contentContainer.innerHTML = '';
         contentContainer.appendChild(header);
         contentContainer.appendChild(beerGrid);
+        // Popup close handler
+        document.getElementById('closeBeerModal').addEventListener('click', () => {
+            document.getElementById('beerModal').classList.add('hidden');
+        });
+        document.getElementById('beerModal').addEventListener('click', (e) => {
+            if (e.target === e.currentTarget) {
+                e.currentTarget.classList.add('hidden');
+            }
+        });
+    }
+
+    function renderGlasses() {
+        document.getElementById("breweryContainer").style.display = "block";
+        document.getElementById("countryTabs").style.display = "none";
+        const breweryContainer = document.getElementById('breweryTabs');
+        breweryContainer.innerHTML = '';
+
+        const breweries = [...new Set(beerGlasses
+            .map(glass => glass.brewery))];
+        breweries.sort();
+        breweries.unshift('All');
+
+        breweries.forEach((brewery, index) => {
+            const tab = document.createElement('button');
+            const glasses = brewery === 'All'
+                ? beerGlasses
+                : beerGlasses.filter(glass =>
+                    glass.brewery === brewery
+                );
+            tab.style = 'text-align: left;';
+            tab.className = `px-4 py-2 rounded ${index === 0 ? 'bg-blue-300 text-white' : 'bg-gray-200'}`;
+            const breweryName = brewery.length > 17 ? brewery.substring(0, 17) + '...' : brewery;
+            tab.textContent = breweryName + ' (' + glasses.length + ')';
+            tab.addEventListener('click', () => {
+                breweryContainer.childNodes.forEach(t => {
+                    t.className = 'px-4 py-2 rounded bg-gray-200';
+                });
+                tab.className = 'px-4 py-2 rounded bg-blue-300 text-white';
+
+                renderGlassesContent(brewery);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            breweryContainer.appendChild(tab);
+        });
+        document.getElementById('brewerySearch').addEventListener('input', function() {
+            renderGlassesContent(breweries[0], this.value);
+        });
+        renderGlassesContent(breweries[0]);
+    }
+
+    function renderGlassesContent(brewery, search = '') {
+        const contentContainer = document.getElementById('beerContent');
+        let glasses = brewery === 'All'
+            ? beerGlasses
+            : beerGlasses.filter(glass => glass.brewery === brewery);
+
+        if (search) {
+            glasses = glasses.filter(glass => glass.name.toLowerCase().includes(search.toLowerCase()));
+        }
+
+        glasses.sort((a, b) => a.brewery.localeCompare(b.brewery) || a.name.localeCompare(b.name))
+        // Create header
+        const header = document.createElement('h2');
+        header.className = 'text-2xl font-semibold mb-4';
+        header.textContent = brewery === 'All' ? 'All Breweries' : brewery;
+
+        // Create glass grid
+        const glassGrid = document.createElement('div');
+        glassGrid.className = 'grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4';
+
+        glasses.forEach(glass => {
+            const glassElement = document.createElement('div');
+            glassElement.className = 'bg-gray-100 rounded-lg p-3 text-center';
+            glassElement.innerHTML = `
+                    <img rel="preload" src="${getCachedImageSrc(glass.image)}" alt="${glass.name}" class="mx-auto mb-2 h-32 sm:h-48 object-contain w-full">
+                    <p class="font-normal line-clamp-2">${glass.name}</p>
+                `;
+            glassElement.addEventListener('click', () => {
+                const modal = document.getElementById('beerModal');
+                const content = document.getElementById('beerModalContent');
+                content.innerHTML = `
+                    <img src="${getCachedImageSrc(glass.image)}" alt="${glass.name}" class="mx-auto mb-4 h-64 sm:h-96 object-contain w-full">
+                    <h3 class="text-xl font-bold mb-2">${glass.name.replaceAll('</br>', '')}</h3>
+                    <p class="mb-1">${glass.country ? `<strong>${glass.country}</strong>` : ''}</p>
+    `;
+                modal.classList.remove('hidden');
+            });
+            glassGrid.appendChild(glassElement);
+        });
+
+        contentContainer.innerHTML = '';
+        contentContainer.appendChild(header);
+        contentContainer.appendChild(glassGrid);
         // Popup close handler
         document.getElementById('closeBeerModal').addEventListener('click', () => {
             document.getElementById('beerModal').classList.add('hidden');
