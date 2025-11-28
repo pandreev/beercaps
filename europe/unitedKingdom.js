@@ -8,9 +8,9 @@ const beerUnitedKingdom = [
     },
     {name: 'St. Austell', brewery: 'St. Austell', country: 'United Kingdom', continent: 'Europe', image: 'img/UnitedKingdom/StAustell/St_Austell.png'},
     {
-        name: 'Wellpark Caledonia Best',
-        brewery: 'Tennent Caledonian Breweries',
-        country: 'United Kingdom',
+        name: 'Tennent\'s 1885 Lager',
+        brewery: 'Tennent\'s Caledonian Breweries',
+        country: 'United Kingdom', city: 'Glasgow', abv: '5.0%', style: 'Pale Lager',
         continent: 'Europe',
         image: 'img/UnitedKingdom/Tennent/Wellpark_Caledonia_Best.png'
     },
