@@ -180,14 +180,14 @@
         // glasses
         const glassTab = document.createElement('button');
         glassTab.className = `px-4 py-2 rounded bg-gray-200`;
-        glassTab.innerHTML = 'Glasses';
+        glassTab.innerHTML = 'Glasses' + ' (' + beerGlasses.length + ')';
         glassTab.addEventListener('click', () => {
             tabContainer.childNodes.forEach(t => {
                 t.className = 'px-4 py-2 rounded bg-gray-200';
             });
             glassTab.className = 'px-4 py-2 rounded bg-blue-500 text-white';
 
-            renderGlasses();
+            renderGlassesCountries();
         });
         tabContainer.appendChild(glassTab);
 
@@ -354,13 +354,43 @@
         });
     }
 
-    function renderGlasses() {
+    function renderGlassesCountries() {
+        document.getElementById("countryTabs").style.display = "block";
         document.getElementById("breweryContainer").style.display = "block";
-        document.getElementById("countryTabs").style.display = "none";
+        const tabContainer = document.getElementById('countryTabs');
+        tabContainer.innerHTML = '';
+
+        const countries = [...new Set(beerGlasses
+            .map(beer => beer.country))];
+        countries.sort();
+
+        countries.forEach((country, index) => {
+            const tab = document.createElement('button');
+            const glasses = beerGlasses.filter(beer =>
+                beer.country === country
+            );
+            tab.className = `px-4 py-2 rounded ${index === 0 ? 'bg-blue-300 text-white' : 'bg-gray-200'}`;
+            tab.innerHTML = `${countryFlags[country] || ''} ${country} (${glasses.length})`;
+            tab.addEventListener('click', () => {
+                tabContainer.childNodes.forEach(t => {
+                    t.className = 'px-4 py-2 rounded bg-gray-200';
+                });
+                tab.className = 'px-4 py-2 rounded bg-blue-300 text-white';
+
+                renderGlasses(country);
+            });
+            tabContainer.appendChild(tab);
+        });
+
+        renderGlasses(countries[0]);
+    }
+
+    function renderGlasses(country) {
         const breweryContainer = document.getElementById('breweryTabs');
         breweryContainer.innerHTML = '';
 
         const breweries = [...new Set(beerGlasses
+            .filter(glass => glass.country === country)
             .map(glass => glass.brewery))];
         breweries.sort();
         breweries.unshift('All');
@@ -368,9 +398,11 @@
         breweries.forEach((brewery, index) => {
             const tab = document.createElement('button');
             const glasses = brewery === 'All'
-                ? beerGlasses
+                ? beerGlasses.filter(glass =>
+                    glass.country === country
+                )
                 : beerGlasses.filter(glass =>
-                    glass.brewery === brewery
+                    glass.country === country && glass.brewery === brewery
                 );
             tab.style = 'text-align: left;';
             tab.className = `px-4 py-2 rounded ${index === 0 ? 'bg-blue-300 text-white' : 'bg-gray-200'}`;
@@ -382,21 +414,23 @@
                 });
                 tab.className = 'px-4 py-2 rounded bg-blue-300 text-white';
 
-                renderGlassesContent(brewery);
+                renderGlassesContent(country, brewery);
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
             breweryContainer.appendChild(tab);
         });
         document.getElementById('brewerySearch').addEventListener('input', function() {
-            renderGlassesContent(breweries[0], this.value);
+            renderGlassesContent(country, breweries[0], this.value);
         });
-        renderGlassesContent(breweries[0]);
+        renderGlassesContent(country, breweries[0]);
     }
 
-    function renderGlassesContent(brewery, search = '') {
+    function renderGlassesContent(country, brewery, search = '') {
         const contentContainer = document.getElementById('beerContent');
         let glasses = brewery === 'All'
-            ? beerGlasses
+            ? beerGlasses.filter(glass =>
+                glass.country === country
+            )
             : beerGlasses.filter(glass => glass.brewery === brewery);
 
         if (search) {
