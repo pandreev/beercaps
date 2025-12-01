@@ -7,6 +7,12 @@ const beerGlasses = [
         image: 'glasses/img/Spain/Alhambra_330ml.png'
     },
     {
+        name: 'Alhambra </br> Vaso 300ml',
+        brewery: 'Alhambra',
+        country: 'Spain',
+        image: 'glasses/img/Spain/Alhambra_300ml.png'
+    },
+    {
         name: '1906 Pelirroja </br> Copa 330ml',
         brewery: 'Estrella Galicia',
         country: 'Spain',
@@ -17,6 +23,18 @@ const beerGlasses = [
         brewery: 'Estrella Galicia',
         country: 'Spain',
         image: 'glasses/img/Spain/Estrella_Galicia_330ml.png'
+    },
+    {
+        name: 'Estrella Galicia </br> Copa',
+        brewery: 'Estrella Galicia',
+        country: 'Spain',
+        image: 'glasses/img/Spain/Estrella_Galicia_2_330ml.png'
+    },
+    {
+        name: 'Cruzcampo Gran Reserva </br> Copa',
+        brewery: 'Cruzcampo',
+        country: 'Spain',
+        image: 'glasses/img/Spain/Cruzcampo_Gran_Reserva_330ml.png'
     },
     {
         name: 'El Aguila </br> Caña',
@@ -35,6 +53,12 @@ const beerGlasses = [
         brewery: 'Dorada',
         country: 'Spain',
         image: 'glasses/img/Spain/Dorada_330ml.png'
+    },
+    {
+        name: 'Euro Pils </br> Caña',
+        brewery: 'Euro Pils',
+        country: 'Spain',
+        image: 'glasses/img/Spain/EuroPils_330ml.png'
     },
     // Germany
     {
@@ -74,12 +98,30 @@ const beerGlasses = [
         image: 'glasses/img/Germany/Camba_330ml.png'
     },
     {
-        name: 'Kaltenberg </br> Glas 500ml',
+        name: 'Kaltenberg Weißbier </br> Glas 500ml',
         brewery: 'Kaltenberg',
         country: 'Germany',
         image: 'glasses/img/Germany/Kaltenberg_500ml.png'
     },
-    // Bulgaria
+    {
+        name: 'Bischofshof </br> Glas 500ml',
+        brewery: 'Bischofshof',
+        country: 'Germany',
+        image: 'glasses/img/Germany/Bischofshof_500ml.png'
+    },
+    {
+        name: 'Veltins Pils </br> Glas 400ml',
+        brewery: 'Veltins',
+        country: 'Germany',
+        image: 'glasses/img/Germany/Veltins_400ml.png'
+    },
+    {
+        name: 'Alpirsbacher Klosterbräu </br> Glas 500ml',
+        brewery: 'Alpirsbacher',
+        country: 'Germany',
+        image: 'glasses/img/Germany/Alpirsbacher_500ml.png'
+    },
+    // Belgium
     {
         name: 'Gulden Draak </bg> 500ml',
         brewery: 'Gulden Draak',
@@ -104,5 +146,33 @@ const beerGlasses = [
         brewery: 'Gaida',
         country: 'Germany',
         image: 'glasses/img/Bulgaria/Gaida_500ml.png'
+    },
+    // Ireland
+    {
+        name: 'Kilkenny </br> 500ml',
+        brewery: 'Kilkenny',
+        country: 'Ireland',
+        image: 'glasses/img/Ireland/Kilkenny_500ml.png'
+    },
+    // Portugal
+    {
+        name: 'Super Bock </br> 330ml',
+        brewery: 'Super Bock',
+        country: 'Portugal',
+        image: 'glasses/img/Portugal/Super_Bock_330ml.png'
+    },
+    // France
+    {
+        name: 'Mützig Old Lager </br> 250ml',
+        brewery: 'Mützig',
+        country: 'France',
+        image: 'glasses/img/France/Mutzig_250ml.png'
+    },
+    // Sweden
+    {
+        name: 'Spendrup\'s </br> 300ml',
+        brewery: 'Spendrup\'s',
+        country: 'Sweden',
+        image: 'glasses/img/Sweden/Spendrup_300ml.png'
     },
 ];
