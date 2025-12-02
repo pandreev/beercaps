@@ -458,7 +458,7 @@
                 const modal = document.getElementById('beerModal');
                 const content = document.getElementById('beerModalContent');
                 content.innerHTML = `
-                    <img src="${getCachedImageSrc(glass.image)}" alt="${glass.name}" class="mx-auto mb-4 h-64 sm:h-96 object-contain w-full">
+                    <img src="${getCachedImageSrc(glass.image)}" alt="${glass.name}" class="mx-auto mb-4 h-128 sm:h-192 object-contain w-full">
                     <h3 class="text-xl font-bold mb-2">${glass.name.replaceAll('</br>', '')}</h3>
                     <p class="mb-1">${glass.country ? `<strong>${glass.country}</strong>` : ''}</p>
     `;
