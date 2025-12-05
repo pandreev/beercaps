@@ -144,7 +144,7 @@ const beerGlasses = [
     {
         name: 'Gaida Premium </br> 500ml',
         brewery: 'Gaida',
-        country: 'Germany',
+        country: 'Bulgaria',
         image: 'glasses/img/Bulgaria/Gaida_500ml.png'
     },
     // Ireland
