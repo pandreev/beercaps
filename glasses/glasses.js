@@ -49,6 +49,12 @@ const beerGlasses = [
         image: 'glasses/img/Spain/Victoria_Malaga_330ml.png'
     },
     {
+        name: 'Victoria Malaga </br> Caña',
+        brewery: 'Victoria Malaga',
+        country: 'Spain',
+        image: 'glasses/img/Spain/Victoria_Malaga_200ml.png'
+    },
+    {
         name: 'Dorada Pilsen </br> Caña',
         brewery: 'Dorada',
         country: 'Spain',
@@ -98,6 +104,12 @@ const beerGlasses = [
         image: 'glasses/img/Germany/Camba_330ml.png'
     },
     {
+        name: 'Erdinger Urweisse </br> Glas 500ml',
+        brewery: 'Erdinger',
+        country: 'Germany',
+        image: 'glasses/img/Germany/Erdinger_Urweisse_500ml.png'
+    },
+    {
         name: 'Kaltenberg Weißbier </br> Glas 500ml',
         brewery: 'Kaltenberg',
         country: 'Germany',
@@ -120,6 +132,12 @@ const beerGlasses = [
         brewery: 'Alpirsbacher',
         country: 'Germany',
         image: 'glasses/img/Germany/Alpirsbacher_500ml.png'
+    },
+    {
+        name: 'Dom Kölsch </br> Glas 200ml',
+        brewery: 'Dom Kölsch',
+        country: 'Germany',
+        image: 'glasses/img/Germany/Dom_Koelsch_200ml.png'
     },
     // Belgium
     {
@@ -162,6 +180,12 @@ const beerGlasses = [
         image: 'glasses/img/Portugal/Super_Bock_330ml.png'
     },
     // France
+    {
+        name: 'Kronenbourg 1664 </br> 330ml',
+        brewery: 'Kronenbourg',
+        country: 'France',
+        image: 'glasses/img/France/Kronenbourg_330ml.png'
+    },
     {
         name: 'Mützig Old Lager </br> 250ml',
         brewery: 'Mützig',
