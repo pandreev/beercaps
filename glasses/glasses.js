@@ -92,6 +92,12 @@ const beerGlasses = [
         image: 'glasses/img/Germany/Franziskaner_500ml.png'
     },
     {
+        name: 'Franziskaner Weißbier </br> Glas 500ml',
+        brewery: 'Franziskaner',
+        country: 'Germany',
+        image: 'glasses/img/Germany/Franziskaner_500ml_2.png'
+    },
+    {
         name: 'Hofbräuhaus </br> Maßkrug 1l',
         brewery: 'Hofbräuhaus',
         country: 'Germany',
